@@ -1,0 +1,1 @@
+export const Api = 'https://github.com/Angola-Api/Angola-Api'
