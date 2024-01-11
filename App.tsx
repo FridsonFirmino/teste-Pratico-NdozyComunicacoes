@@ -1,6 +1,7 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import { ActivityIndicator } from 'react-native';
+import { ThemeProvider } from "styled-components";
 import { 
   useFonts, 
   SpaceMono_400Regular,
@@ -8,6 +9,7 @@ import {
 } from "@expo-google-fonts/space-mono";
 
 import { Routes } from './src/router';
+import { colors } from './src/uteis/colors';
 
 export default function App() {
 
@@ -21,9 +23,9 @@ export default function App() {
   }
   
   return (
-    <>
+    <ThemeProvider theme={colors}> 
       <Routes/>
       <StatusBar style="auto" />
-    </>
+    </ThemeProvider>
   );
 }
