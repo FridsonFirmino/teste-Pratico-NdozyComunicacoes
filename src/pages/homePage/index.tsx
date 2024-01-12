@@ -15,6 +15,7 @@ import {
 
 import { Angola_Api, Angola_Api_Data, DATAS } from '../../uteis/service';
 import { Card } from '../../components/CardHome';
+import { colors } from '../../uteis/colors';
 
 const bgImage = require("../../../assets/2.jpg")
 
@@ -64,7 +65,7 @@ export function HomePage() {
         isLoading
         ?
         (
-          <ActivityIndicator/>
+          <ActivityIndicator size={'large'} color={colors.red}/>
         )
         :
         (

@@ -12,7 +12,8 @@ import {
 import { ButtoGoBack } from '../../components/buttonGoBack';
 import { Angola_Api, Angola_Api_Data, ExtrairTextosDaString } from '../../uteis/service';
 import { Card } from '../../components/CardDetails';
-import { FlatList } from 'react-native';
+import { ActivityIndicator, FlatList } from 'react-native';
+import { colors } from '../../uteis/colors';
 
 const BtnImage = require("../../../assets/left-arrow.png")
 
@@ -52,10 +53,20 @@ export function DetailsPage() {
       </ImageArea>
 
       <Body>
-        <FlatList
+         {
+        isLoading
+        ?
+        (
+          <ActivityIndicator size={'large'} color={colors.red}/>
+        )
+        :
+        (
+          <FlatList
           data={ExtrairTextosDaString(listData?.municipios)}
           renderItem={({ item }) => <Card municipio={item}/>}
         />
+        )
+      }
       </Body>
     </Container>
   );
