@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.TouchableOpacity`
   width: 90%;
-  height: 50px;
+  height: 60px;
   border-radius: 15px;
   background-color: ${props => props.theme.red};
   justify-content: center;

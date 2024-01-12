@@ -14,7 +14,7 @@ import {
   Body } from './styled';
 
 import { Angola_Api, Angola_Api_Data, DATAS } from '../../uteis/service';
-import { Card } from '../../components/Card';
+import { Card } from '../../components/CardHome';
 
 const bgImage = require("../../../assets/2.jpg")
 
@@ -30,7 +30,6 @@ export function HomePage() {
       .get(Angola_Api)
       .then((Response) => {
         setListData(Response.data)
-        console.log(Response.data)
       })
       .catch((error) => {
         console.log(error?.response)
