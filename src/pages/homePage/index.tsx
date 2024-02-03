@@ -10,7 +10,6 @@ import {
   ImageInfo2,
   InfoArea,
   Image, 
-  Name,
   Body } from './styled';
 
 import { Angola_Api, Angola_Api_Data, DATAS } from '../../uteis/service';
