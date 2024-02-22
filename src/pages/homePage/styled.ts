@@ -7,7 +7,7 @@ export const Container = styled.View`
 `;
 
 export const Name = styled.Text`
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
 `;
 
