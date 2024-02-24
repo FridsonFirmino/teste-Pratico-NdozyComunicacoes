@@ -19,7 +19,7 @@ export const ImageArea = styled.View`
 export const ImageBackgroundTransparent = styled.View`
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.26;
     background-color: ${props => props.theme.red};
     border-bottom-right-radius: 90px;
 `;
