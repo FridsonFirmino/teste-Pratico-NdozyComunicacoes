@@ -23,7 +23,6 @@ export function HomePage() {
   const [isLoading, setIsLoading] = useState(false)
   
   const Navigation = useNavigation()
-
   useEffect(()=>{
     setIsLoading(true)
     axios
