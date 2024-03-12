@@ -57,6 +57,6 @@ export const EnterButton = styled.TouchableOpacity`
 
 export const ButtonName = styled.Text`
     color: ${props => props.theme.text_White};
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 `
